@@ -1,0 +1,736 @@
+{% extends 'layouts/main.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+<div class="res-header w-100">
+    <div class="res-topbar w-100">
+      <div class="container">
+        <div class="res-topbar-inner d-flex flex-wrap align-items-center justify-content-between">
+          <div class="logo">
+            <h1 class="mb-0">
+              <a href="index.html"><img src="{% static '/images/logo.webp' %}"></a></h1>
+          </div>
+                              <ul class="shp-lst list-unstyled d-flex align-items-center justify-content-end">
+                                  <li class="bar">
+                                  <a class="responsive-menu-trigger d-inline-block" href="#" onclick="showMenu()"><i class="fi fi-rr-align-justify"></i></a>
+                              </li>
+                                  <li><a style="font-weight: 300;" href="#"><img src="{% static '/images/resources/icon-3.png' %}" alt=""></a></li>
+                                  <li><a style="font-weight: 500;" href="#"><img src="{% static '/images/resources/icon-4.png' %}" alt=""></a></li>
+                              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-nav position-relative">
+       <div class="nav-links" id="navLinks">
+        <a href="#" class="position-absolute res-menu-close" onclick="hideMenu()">
+        <i class="fa-solid fa-xmark"></i></a>
+      
+      </div>
+     </div>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+     function hideMenu(){
+      navLinks.style.right = "-322px";
+    }
+  
+  </script>
+  
+  <section>
+      <div class="hero-section">
+          <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(static/images/resources/mainbanner.jpg);">
+              <div class="swiper-text-wrap">
+                  <div class="container swiper-tl">
+                      <div class="content">
+                          <div class="content-width">
+                              <div class="anime up title">Limited time only.</div>
+                              <div class="anime left subtitle">Monsoon<br><strong class="text-primary">sale</strong></div>
+                              <div class="anime right description">Up to 50% off</div>
+                              <div class="anime down button list-inline-item">
+                                  <a class="btn btn-outline " href="#"><span>SHOP NOW <i style="padding-left: 10px;font-size: 14px;"class="fa-solid fa-arrow-right"></i></span>
+                                      
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="{% static 'https://unpkg.com/swiper/swiper-bundle.min.js' %}"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {});
+      </script>
+      </div>
+  </section>
+  <section>
+      <div class="w-100" style="padding:1.3rem 0">
+          <div class="container">
+              <div class="row align-items-center gx-3 res-row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="block-one position-relative">
+                          <a href="#" style="background-image:url(static/images/resources/headphones.jpg)"></a>
+                          <div class="text-content position-absolute">
+                              <h4 style="color: #ffffff;">Final reduction</h4>
+                              <h3 style="color:#ffffff;">
+                                  <strong>Gaming headphones</strong> <br> up to 60% off</h3>
+                                  <a href="#" class="btn btn-outline-primary ">SHOP NOW <i style="padding-left: 10px;font-size: 12px;"class="fa-solid fa-arrow-right"></i> </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="block-one position-relative mt">
+                          <a href="#" style="background-image:url(static/images/resources/keyboard.jpg)"></a>
+                          <div class="text-content position-absolute">
+                              <h4 style="color: #ffffff;">Limited time only.</h4>
+                              <h3 style="color: #ffffff">
+                                  <strong>Gaming Keyboards </strong> <br>40 -70% off</h3>
+  
+                                  <a href="#" class="btn btn-outline-primary ">SHOP NOW <i style="padding-left: 10px;font-size: 12px;"class="fa-solid fa-arrow-right"></i> </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="block-one position-relative mt">
+                          <a href="#" style="background-image:url(static/images/resources/mouse.jpg)"></a>
+                          <div class="text-content position-absolute">
+                              <h4 style="color: #ffffff;">Navigate your ideas..</h4>
+                              <h3 style="color: #ffffff">
+                                  <strong>Gaming Mouses</strong> <br>from $6.99</h3>
+                                  <a href="#" class="btn btn-outline-primary ">SHOP NOW <i style="padding-left: 10px;font-size: 12px;"class="fa-solid fa-arrow-right"></i> </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section>
+          <div class="w-100" style="padding:1.3rem 0 2rem">
+              <div class="container">
+                  <div class="brand-wrap v1">
+                      <div class="row align-items-center">
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/acer.png' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/hp.png' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/micro.jpeg' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/panasonic.png' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/apple.webp' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/nvidia.png' %}"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="brand-item text-center w-100">
+                                  <a href="#" title="">
+                                      <img class="img-fluid" src="{% static '/images/resources/dell.jpg' %}"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="section-width">
+          <div class="container">
+              <div class="w-100 border-top" style="border-top-color: #ebebeb !important;"></div>
+          </div>
+      </div>
+  
+  
+  <section>
+      <div class="w-100">
+          <div class="container">
+              <div class="shp-tab ">
+              <ul class="nav nav-tabs mb-2 d-flex justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Featured</button>
+    </li>
+    
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/nothing11.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Nothing</a>
+                        <h2 class="product-name">
+                          <a href="#">Nothing Phone (2a) 5G (Black, 8GB RAM, 256GB Storage)</a></h2>
+                          <span class="product-price">$600.99</span>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/mac3.png' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Ant Esports</a>
+                        <h2 class="product-name">
+                          <a href="#">Apple 2023 MacBook Pro (14-inch) </a></h2>
+                          <span class="product-price">$1600.99</span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/antesports.jpg' %}"></a>
+                        <span class="position-absolute sv">Save 38%</span>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body v2 text-center">
+                        <a href="#" class="brand-name">Ant Esports</a>
+                        <h2 class="product-name">
+                          <a href="#">Ant Esports Gaming Keyboards</a></h2>
+                          <span class="product-price">$7.99 <del>$12.99</span></del></span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/ps5.webp' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">SONY PS5</a>
+                        <h2 class="product-name">
+                          <a href="#">SONY PlayStation5 Digital Edition (slim) CFI-2008B01X 1024 GB  (White)</a></h2>
+                          <span class="product-price">$700.99</span>
+                          <div class="prd-options">
+                
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row">
+            
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Sandals</a></h2>
+                          <span class="product-price">$24.99</span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-1.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+ 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-3.jpg' %}"></a>
+                        <span class="position-absolute sv">Save 38%</span>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="{% static '/product-img1-2.jpg' %}" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body v2 text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Printed sweatshirt</a></h2>
+                          <span class="product-price">$7.99 <del>$12.99</span></del></span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-4.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Linen-blend paper bag trousers</a></h2>
+                          <span class="product-price">$17.99</span>
+                          <div class="prd-options">
+                              <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-5.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-6.jpg' %}"></a></li>
+                                  
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-4.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Linen-blend paper bag trousers</a></h2>
+                          <span class="product-price">$17.99</span>
+                          <div class="prd-options">
+                              <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-5.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-6.jpg' %}"></a></li>
+                                  
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-1.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Denim jacket</a></h2>
+                          <span class="product-price">$19.99</span>
+                          <div class="prd-options">
+                              <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-1.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-2.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-3.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-4.jpg' %}"></a></li>
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-2.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Sandals</a></h2>
+                          <span class="product-price">$24.99</span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-3.jpg' %}"></a>
+                        <span class="position-absolute sv">Save 38%</span>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body v2 text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Printed sweatshirt</a></h2>
+                          <span class="product-price">$7.99 <del>$12.99</span></del></span>
+                          
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  
+  <section>
+      <div class="w-100 img-set" style="margin-top:60px;">
+          <div class="container">
+              <div class="row">
+                  <div class="sec-tl text-center">
+                      <h1>RECENT ARRIVALS</h1>
+                  </div>
+              </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-5.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Denim jacket</a></h2>
+                          <span class="product-price">$19.99</span>
+                          <div class="prd-options">
+                              <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-1.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-2.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-3.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-4.jpg' %}"></a></li>
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-6.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Sandals</a></h2>
+                          <span class="product-price">$24.99</span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-7.jpg' %}"></a>
+                        <span class="position-absolute sv">Save 38%</span>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body v2 text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Printed sweatshirt</a></h2>
+                          <span class="product-price">$7.99 <del>$12.99</del></span>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="block-product">
+                    <div class="product-thumb position-relative">
+                        <a href="#"><img src="{% static '/images/resources/prd-8.jpg' %}"></a>
+                        <a href="#" class="ad-cart position-absolute text-center">
+                            <span>Add to Cart</span>
+                        </a>
+                        <div class="product-btns position-absolute">
+                          <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                              <i class="fi fi-rr-heart"></i>
+                          </a>
+                          <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                              <i class="fi-rr-shopping-bag"></i>
+                          </a>
+                          <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                              <i class="fi fi-rr-picture"></i>
+                          </a>
+  
+          <!--product-btns--></div>
+                    </div>
+                    <div class="product-body text-center">
+                        <a href="#" class="brand-name">Molla</a>
+                        <h2 class="product-name">
+                          <a href="#">Linen-blend paper bag trousers</a></h2>
+                          <span class="product-price">$17.99</span>
+                          <div class="prd-options">
+                              <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-5.jpg' %}"></a></li>
+                                  <li><a href="#"><img src="{% static '/images/resources/s-prd-6.jpg' %}"></a></li>
+                                  
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+  
+           <div class="col-lg-12 text-center mt-3 p-0">
+               <a class="btn btn-outline button-more" href="#"><span>VIEW MORE</span> <i style="padding-left: 5px;font-size: 10px;"class="fa-solid fa-arrow-right"></i></a>
+           </div> 
+    </div>
+  </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  <div class="section-width my-5">
+          <div class="container">
+              <div class="w-100 border-top" style="border-top-color: #ebebeb !important;"></div>
+          </div>
+      </div>
+  
+
+
+{% endblock body %}

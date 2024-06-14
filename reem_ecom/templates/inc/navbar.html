@@ -1,0 +1,89 @@
+{% load static %}
+<header>
+    <div class="w-100 bg-1 header-pd">
+        <div class="container">
+            <div class="top-bar d-flex flex-wrap align-items-center justify-content-between">
+                <div class="bar-left">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> Call: +91 8606559112</a></li>
+                    </ul>
+                </div>
+                <div class="bar-right">
+                    <ul class="list-unstyled d-flex flex-wrap align-items-center gap-3">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="{% url 'logout' %}"><i class="fa-regular fa-user"></i> Logout</a></li>
+                                 
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="w-100 bg-white main-pd">
+        <div class="container">
+            <div class="main-header row w-100 d-flex align-items-center justify-content-between">
+                <div class="menu-left col-lg-4 col-md-4 d-flex flex-nowrap align-items-center">
+                    
+                    <div class="field-box position-relative">
+                        <input type="text" name="q" value="" class="search" placeholder="Search in..." required="">
+                        <div class="search-field position-absolute">
+                            <a href="#">
+                        <img src="{% static '/images/resources/search-outline.svg' %}" alt="" width="28px" style="-webkit-transform: rotateY(180deg);
+                           -moz-transform: rotateY(180deg);
+                            -ms-transform: rotateY(180deg);
+                             -o-transform: rotateY(180deg);
+                                transform: rotateY(180deg);"></a>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="menu-mid col-lg-4 col-md-4 text-lg-center">
+                    <!-- <a href="index.html"><img src="{% static '/images/reemlogo.png'%}" alt=""></a> -->
+                </div>
+                <div class="menu-right col-md-4 col-lg-4">
+                    <ul class="shp-lst list-unstyled d-flex align-items-center justify-content-end">
+                        <li><a style="font-weight: 300;" href="#"><img src="{% static '/images/resources/icon-1.png' %}" alt=""> My wishlist</a></li>
+                        <li><a style="font-weight: 500;" href="#"><img src="{% static '/images/resources/icon-2.png' %}" alt="">$0.00</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 header-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="border-top" style="opacity: 0.5;"></div>
+            <nav class="main-navigation">
+                <ul class="main-menu list-unstyled d-flex">
+                    <li class="active"><a href="/">Home</a>
+
+                       <div class="megamenu-wrap">
+
+<div class="container">
+
+<!--container--></div>  
+<!--megamenu--></div>
+                    </li>
+                    <li><a href="index.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="children mb-0 w-100 list-unstyled">
+                            <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                            <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'products' %}">Products </a>
+                    
+                    </li>
+                    <li><a href="{% url 'login' %}">Sign In </a>
+                      
+                    </li>
+                    <li><a href="{% url 'register' %}">Register</a>
+                    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

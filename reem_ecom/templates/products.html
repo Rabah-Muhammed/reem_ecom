@@ -1,0 +1,607 @@
+{% extends 'layouts/main.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+<div class="res-header w-100">
+<div class="res-topbar w-100">
+<div class="container">
+<div class="res-topbar-inner d-flex flex-wrap align-items-center justify-content-between">
+<div class="logo">
+<h1 class="mb-0">
+<a href="index.html"><img src="{% static '/images/logo.webp' %}"></a></h1>
+</div>
+                <ul class="shp-lst list-unstyled d-flex align-items-center justify-content-end">
+                    <li class="bar">
+                    <a class="responsive-menu-trigger d-inline-block" href="#" onclick="showMenu()"><i class="fi fi-rr-align-justify"></i></a>
+                </li>
+                    <li><a style="font-weight: 300;" href="#"><img src="{% static '/images/resources/icon-3.png' %}" alt=""></a></li>
+                    <li><a style="font-weight: 500;" href="#"><img src="{% static '/images/resources/icon-4.png' %}" alt=""></a></li>
+                </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-nav position-relative">
+<div class="nav-links" id="navLinks">
+<a href="#" class="position-absolute res-menu-close" onclick="hideMenu()">
+<i class="fa-solid fa-xmark"></i></a>
+<ul class="mobile-res list-unstyled mb-0">
+<li><a href="index.html">Home</a></li>
+<li><a class="collapsed" data-bs-toggle="collapse" data-bs-target="#mb-one" aria-controls="mb-one" href="index.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="collapse children mb-0 w-100 list-unstyled" id="mb-one">
+                        <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                        <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed" data-bs-toggle="collapse" data-bs-target="#mb-two" aria-controls="mb-two" href="index.html">Product <i class="fa-solid fa-angle-down"></i></a>
+                    <ul id="mb-two" class="collapse children mb-0 w-100 list-unstyled">
+                        <li><a href="product-detail.html">Product-Detail</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a class="collapsed" data-bs-toggle="collapse" data-bs-target="#mb-three" aria-controls="mb-three"  href="index.html">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <ul id="mb-three" class="collapse children mb-0 w-100 list-unstyled">
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed" data-bs-toggle="collapse" data-bs-target="#mb-four" aria-controls="mb-four" href="index.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <ul id="mb-four" class="collapse children mb-0 w-100 list-unstyled">
+                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Buy Now</a></li>
+
+</ul>
+</div>
+</div>
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+navLinks.style.right = "0";
+}
+function hideMenu(){
+navLinks.style.right = "-322px";
+}
+
+</script>
+
+<div class="border-top" style="opacity: .3;"></div>
+<div class="container">
+<div class="breadcrumbs row align-items-center justify-content-between d-flex">
+<div class="col-12">
+<ul class="breadcrumbs_content list-unstyled d-flex justify-content-center">
+    <li class="home">
+        <a title="Home" href="/" itemprop="url">
+            <span>Home</span>
+        </a>
+    </li>
+    <li>
+        <span><i class="fa-solid fa-angle-right"></i> Shop Fullwidth</span>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="border-top mb-2" style="opacity: .3;"></div>
+<section class="sp-wrap org">
+<div class="w-100">
+<div class="container">
+<div class="row">
+<div class="filter-wrap d-flex justify-content-between align-items-center flex-wrap">
+    <a class="meu"href="#"><i class="fi fi-rr-align-justify"></i> FILTER</a>
+    
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="max-width: 13%;border-radius: 0;padding: 2px 0;">
+                     <option selected>Date, old to new</option>
+                     <option value="1">Pents</option>
+                     <option value="2">Shirts</option>
+                     <option value="3">Shoes</option>
+                     </select>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-9.webp' %}"></a>
+          <span class="position-absolute sv">Save 38%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Aliquam tincidunt mauris</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+     
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-10.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Vestibulum auctor</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-11.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Nunc dignissim risus</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+              
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-12.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-13.webp' %}"></a>
+          <span class="position-absolute sv">Save 78%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Brown zebra print dungaree dress</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+        
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-14.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Brown faux fur longline coat</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-15.webp' %}"></a>
+          <span class="position-absolute sv">Save 48%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Lilac horn button knit cardigan</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-16.webp' %}"></a>
+          <span class="position-absolute sv">Save 68%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-17.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-18.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Brown croc embossed double ring jeans belt</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-19.webp' %}"></a>
+          <span class="position-absolute sv">Save 68%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-20.webp' %}"></a>
+          <span class="position-absolute sv">Save 38%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+                <ul class="list-unstyled d-flex gap-2 align-items-center justify-content-center">
+                    <li><a href="#"><img src="{% static '/images/resources/s-prd-1.jpg' %}"></a></li>
+                </ul>
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-9.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Black chain print turtle neck top</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-10.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+            <div class="prd-options">
+       
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-11.webp' %}"></a>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.webp" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Denim jacket</a></h2>
+            <span class="product-price">$19.99</span>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="block-product">
+      <div class="product-thumb position-relative">
+          <a href="#"><img src="{% static '/images/resources/prd-12.webp' %}"></a>
+          <span class="position-absolute sv">Save 38%</span>
+          <a href="#" class="ad-cart position-absolute text-center">
+              <span>Add to Cart</span>
+          </a>
+          <div class="product-btns position-absolute">
+            <a class="wishlist-btn" href="wishlist.html" style="transition-delay:0ms;">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+            <a class="cart-btn" href="cart.html" style="transition-delay: 45ms;">
+                <i class="fi-rr-shopping-bag"></i>
+            </a>
+            <a class="expand-btn" href="images/product-img1-2.jpg" style="transition-delay:90ms;">
+                <i class="fi fi-rr-picture"></i>
+            </a>
+
+<!--product-btns--></div>
+      </div>
+      <div class="product-body text-center">
+          <a href="#" class="brand-name">Molla</a>
+          <h2 class="product-name">
+            <a href="#">Brown paperbag waist pencil skirt</a></h2>
+            <span class="product-price">$100.99</span>
+            <div class="prd-options">
+          
+            </div>
+      </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+{% endblock body %}
